@@ -1,12 +1,12 @@
 package com.technews.model;
-
+import jakarta.persistence.*;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-import javax.persistence.*;
+
 import java.io.Serializable;
 import java.util.Objects;
 
-@Entity
+
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @Table(name = "comment")
 public class Comment implements Serializable {

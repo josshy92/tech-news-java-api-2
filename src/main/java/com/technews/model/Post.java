@@ -1,5 +1,5 @@
 package com.technews.model;
-import org.jetbrains.annotations.NotNull;
+//import org.jetbrains.annotations.NotNull;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
@@ -25,12 +25,12 @@ public class Post implements Serializable {
     private int voteCount;
     private Integer userId;
 
-    @NotNull
+//    @NotNull
     @Temporal(TemporalType.DATE)
     @Column(name = "posted_at")
     private Date postedAt = new Date();
 
-    @NotNull
+//    @NotNull
     @Temporal(TemporalType.DATE)
     @Column(name = "updated_at")
     private Date updatedAt = new Date();
